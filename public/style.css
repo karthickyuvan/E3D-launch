@@ -3,6 +3,7 @@ body, html {
     font-family: 'Puritan', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
   
   .main-wrapper {
@@ -48,16 +49,7 @@ body, html {
     margin-top: 4px;
     width: 100%;
   }
-  .navbar-nav .nav-link.active::after {
-    content: '';
-    display: block;
-    height: 2px;
-    background-color: #ffc107;
-    margin-top: 4px;
-    width: 100%;
-    transition: width 0.3s ease;
-  }
-  
+
   /* Optional: prevent weird wrapping or stretching on smaller screens */
   .navbar-nav .nav-link {
     position: relative;
@@ -121,4 +113,98 @@ body, html {
     }
   }
   
+
+  /* contact page  */
+
+  
+
+  .contact-header {
+    /* background: linear-gradient(to bottom right, #163F5F, #F7BB22), url('./images/handshake-4002834_1920.jpg') center/cover no-repeat; */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0, 0, 0.7)), 
+    url('./images/OIU9M50.jpg') no-repeat center  center/cover;
+    height: 300px;
+    flex-direction: column;
+  }
+  .bg-contact-info {
+    background-color: #163F5F;
+    border-radius: 1.25rem; /* rounded-4 equivalent */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .bg-contact-info h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-info i {
+    min-width: 20px;
+  }
+  
+  .social-icons a {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a.social-hover:hover {
+    color: #ffc107;
+    transform: scale(1.1);
+  }
+  
+  
+  .contact-section {
+    background-color: #f9f9f9;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+    color: #163F5F;
+  }
+  
+  footer {
+    background-color: #163F5F;
+  }
+  
+  footer h5, footer h4 {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  footer ul {
+    padding-left: 0;
+  }
+  
+  footer ul li {
+    list-style: none;
+    margin-bottom: 6px;
+    color: #e2e2e2;
+  }
+  
+  .map-container {
+    margin-top: 40px;
+  }
+  .submit-btn
+  {
+    background-color: #163F5F;
+    color: white;
+  }
+  .submit-btn:hover
+  {
+    background-color: #ffc107;
+    color: #163F5F;
+  }
+
+  @media (max-width: 767.98px) {
+    .contact-info {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .contact-info li,
+    .social-icons {
+      text-align: center;
+    }
+  }
   
