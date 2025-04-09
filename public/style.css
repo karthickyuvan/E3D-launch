@@ -1,0 +1,124 @@
+body, html {
+    height: 100%;
+    font-family: 'Puritan', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-wrapper {
+    position: relative;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Puritan', sans-serif;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .main-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('./images/architecture-8937462_1920.jpg') no-repeat center center/cover;
+  }
+  .navbar-toggler {
+    border-color: white; /* optional: makes the border white too */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22' /%3E%3C/svg%3E");
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 600;
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
+  
+  .navbar-nav .nav-link.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #ffc107;
+    margin-top: 4px;
+    width: 100%;
+  }
+  .navbar-nav .nav-link.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #ffc107;
+    margin-top: 4px;
+    width: 100%;
+    transition: width 0.3s ease;
+  }
+  
+  /* Optional: prevent weird wrapping or stretching on smaller screens */
+  .navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .content-section {
+    min-height: calc(100vh - 100px); /* leave space for navbar */
+  }
+  
+  
+  input::placeholder {
+    color: #666;
+  }
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay-3 {
+    animation-delay: 0.9s;
+  }
+  @media (max-width: 767.98px) {
+    form.d-flex {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    form input.form-control {
+      border-radius: 8px !important;
+      width: 100%;
+      margin-right: 0 !important;
+    }
+  
+    form button {
+      margin-left: 0 !important;
+      border-radius: 8px !important;
+      width: 100%;
+    }
+  }
+  
+  
